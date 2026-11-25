@@ -1,0 +1,159 @@
+.detalhes-animal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 35px;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.detalhes-imagem-area {
+  min-height: 300px;
+}
+
+.detalhes-imagem,
+.detalhes-sem-imagem {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.detalhes-imagem {
+  display: block;
+  object-fit: cover;
+}
+
+.detalhes-sem-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf3ee;
+  color: #236646;
+  font-size: 80px;
+}
+
+.detalhes-conteudo h2 {
+  margin-bottom: 18px;
+  color: #154734;
+  font-size: 28px;
+}
+
+.detalhes-conteudo p {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.detalhes-conteudo strong {
+  color: #236646;
+}
+
+.descricao-animal {
+  margin-top: 20px;
+}
+
+.pedido-area {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pedido-area h2 {
+  margin-bottom: 10px;
+  color: #154734;
+}
+
+.pedido-area > p {
+  margin-bottom: 22px;
+  color: #555;
+}
+
+.pedido-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.pedido-formulario label {
+  margin-bottom: 7px;
+  color: #154734;
+  font-weight: 600;
+}
+
+.pedido-formulario textarea {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.pedido-formulario textarea:focus {
+  border-color: #d2691e;
+  box-shadow: 0 0 0 2px rgba(210, 105, 30, 0.15);
+}
+
+.botao-pedido {
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background-color: #d2691e;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-pedido:hover {
+  background-color: #ab5b14;
+}
+
+.mensagem-pedido {
+  margin-bottom: 18px;
+  padding: 12px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.mensagem-pedido.erro {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.mensagem-pedido.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.voltar-animais {
+  display: inline-block;
+  padding: 11px 16px;
+  border-radius: 7px;
+  background-color: #236646;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .detalhes-animal {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .detalhes-imagem-area,
+  .detalhes-imagem,
+  .detalhes-sem-imagem {
+    height: 240px;
+    min-height: 240px;
+  }
+
+  .pedido-area {
+    padding: 22px 18px;
+  }
+}

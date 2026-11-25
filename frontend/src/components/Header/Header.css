@@ -1,0 +1,151 @@
+.header {
+  width: 100%;
+  background-color: #195036;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  max-width: 1200px;
+  min-height: 78px;
+  margin: 0 auto;
+  padding: 12px 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.logo-imagem {
+  display: block;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu a,
+.link-meus-pedidos,
+.link-meus-animais,
+.link-pedidos-recebidos {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.link-meus-pedidos:hover,
+.link-meus-animais:hover,
+.link-pedidos-recebidos:hover {
+  color: #ff914d;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.nome-usuario {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.botao-entrar,
+.botao-cadastro,
+.botao-sair {
+  padding: 9px 13px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao-entrar {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.botao-entrar:hover {
+  background-color: white;
+  color: #195036;
+}
+
+.botao-cadastro {
+  background-color: #d2691e;
+  color: white;
+}
+
+.botao-cadastro:hover {
+  background-color: #ab5b14;
+}
+
+.botao-sair {
+  border: none;
+  background-color: #d2691e;
+  color: white;
+}
+
+.botao-sair:hover {
+  background-color: #ab5b14;
+}
+
+@media (max-width: 1050px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    order: 3;
+    width: 100%;
+    padding-top: 8px;
+  }
+
+  .header-buttons {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-buttons {
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+}

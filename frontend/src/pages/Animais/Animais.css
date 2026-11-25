@@ -1,0 +1,193 @@
+.filtros-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  align-items: end;
+  gap: 15px;
+  margin-bottom: 35px;
+  padding: 22px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.campo-filtro {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-filtro label {
+  margin-bottom: 7px;
+  color: #154734;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.campo-filtro input,
+.campo-filtro select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  outline: none;
+  background-color: white;
+  font-size: 14px;
+}
+
+.campo-filtro input:focus,
+.campo-filtro select:focus {
+  border-color: #d2691e;
+  box-shadow: 0 0 0 2px rgba(210, 105, 30, 0.15);
+}
+
+.botoes-filtro {
+  display: flex;
+  gap: 8px;
+}
+
+.botao-buscar,
+.botao-limpar {
+  padding: 11px 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-buscar {
+  background-color: #236646;
+  color: white;
+}
+
+.botao-buscar:hover {
+  background-color: #195036;
+}
+
+.botao-limpar {
+  background-color: #eeeeee;
+  color: #444;
+}
+
+.botao-limpar:hover {
+  background-color: #dddddd;
+}
+
+.animais-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.animal-card {
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.animal-imagem,
+.animal-sem-imagem {
+  width: 100%;
+  height: 210px;
+}
+
+.animal-imagem {
+  display: block;
+  object-fit: cover;
+}
+
+.animal-sem-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf3ee;
+  color: #236646;
+  font-size: 60px;
+}
+
+.animal-conteudo {
+  padding: 20px;
+}
+
+.animal-conteudo h2 {
+  margin-bottom: 12px;
+  color: #154734;
+  font-size: 22px;
+}
+
+.animal-conteudo p {
+  margin-bottom: 7px;
+  color: #555;
+  font-size: 14px;
+}
+
+.animal-conteudo strong {
+  color: #236646;
+}
+
+.animal-descricao {
+  min-height: 45px;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+.botao-detalhes {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px;
+  border: none;
+  border-radius: 7px;
+  background-color: #d2691e;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao-detalhes:hover {
+  background-color: #ab5b14;
+}
+
+.mensagem-lista {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  color: #555;
+  text-align: center;
+}
+
+.mensagem-lista.erro {
+  color: #842029;
+  background-color: #f8d7da;
+}
+
+@media (max-width: 950px) {
+  .filtros-formulario {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .botoes-filtro {
+    grid-column: span 2;
+  }
+
+  .animais-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .filtros-formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .botoes-filtro {
+    grid-column: auto;
+  }
+
+  .animais-grid {
+    grid-template-columns: 1fr;
+  }
+}

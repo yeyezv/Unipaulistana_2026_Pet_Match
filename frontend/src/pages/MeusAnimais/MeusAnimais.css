@@ -1,0 +1,193 @@
+.topo-meus-animais {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.botao-cadastrar-animal,
+.botao-ver-animal,
+.botao-voltar-animal {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 7px;
+  background-color: #d2691e;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.botao-cadastrar-animal:hover,
+.botao-ver-animal:hover,
+.botao-voltar-animal:hover {
+  background-color: #ab5b14;
+}
+
+.meus-animais-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.meu-animal-card {
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.meu-animal-imagem,
+.meu-animal-sem-imagem {
+  width: 100%;
+  height: 210px;
+}
+
+.meu-animal-imagem {
+  display: block;
+  object-fit: cover;
+}
+
+.meu-animal-sem-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf3ee;
+  color: #236646;
+  font-size: 60px;
+}
+
+.meu-animal-conteudo {
+  padding: 20px;
+}
+
+.meu-animal-cabecalho {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.meu-animal-cabecalho h2 {
+  color: #154734;
+  font-size: 22px;
+}
+
+.meu-animal-conteudo p {
+  margin-bottom: 8px;
+  color: #555;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.meu-animal-conteudo strong {
+  color: #236646;
+}
+
+.meu-animal-descricao {
+  min-height: 45px;
+  margin-top: 15px;
+}
+
+.status-animal {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-disponivel {
+  background-color: #d9f0e2;
+  color: #236646;
+}
+
+.status-em_processo {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-adotado {
+  background-color: #c9e8d3;
+  color: #155724;
+}
+
+.botao-ver-animal {
+  width: 100%;
+  margin-top: 12px;
+  background-color: #236646;
+  text-align: center;
+}
+
+.botao-ver-animal:hover {
+  background-color: #195036;
+}
+
+.sem-animais {
+  padding: 35px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.sem-animais p,
+.mensagem-meus-animais {
+  margin-bottom: 18px;
+  color: #555;
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .meus-animais-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .topo-meus-animais {
+    justify-content: center;
+  }
+
+  .meus-animais-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .meu-animal-cabecalho {
+    flex-direction: column;
+  }
+}
+
+.botao-editar-animal,
+.botao-excluir-animal {
+  display: inline-block;
+  width: 48%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao-editar-animal {
+  background-color: #236646;
+  color: white;
+}
+
+.botao-editar-animal:hover {
+  background-color: #195036;
+}
+
+.botao-excluir-animal {
+  margin-left: 2%;
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.botao-excluir-animal:hover {
+  background-color: #f1bfc3;
+}

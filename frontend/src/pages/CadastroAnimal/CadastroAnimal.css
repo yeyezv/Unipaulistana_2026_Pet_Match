@@ -1,0 +1,94 @@
+.animal-formulario {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.linha-campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.campo-animal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.campo-animal label {
+  margin-bottom: 7px;
+  color: #154734;
+  font-weight: 600;
+}
+
+.campo-animal input,
+.campo-animal select,
+.campo-animal textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  outline: none;
+  background-color: white;
+  font-size: 14px;
+}
+
+.campo-animal textarea {
+  resize: vertical;
+}
+
+.campo-animal input:focus,
+.campo-animal select:focus,
+.campo-animal textarea:focus {
+  border-color: #d2691e;
+  box-shadow: 0 0 0 2px rgba(210, 105, 30, 0.15);
+}
+
+.botao-animal {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background-color: #d2691e;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-animal:hover {
+  background-color: #ab5b14;
+}
+
+.mensagem-animal {
+  margin-bottom: 18px;
+  padding: 12px;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.mensagem-animal.erro {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.mensagem-animal.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+@media (max-width: 650px) {
+  .animal-formulario {
+    padding: 22px 18px;
+  }
+
+  .linha-campos {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

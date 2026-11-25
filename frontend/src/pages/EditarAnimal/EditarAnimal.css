@@ -1,0 +1,69 @@
+.editar-animal-formulario {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.editar-animal-formulario label {
+  display: block;
+  margin-bottom: 7px;
+  color: #154734;
+  font-weight: 600;
+}
+
+.editar-animal-formulario input,
+.editar-animal-formulario select,
+.editar-animal-formulario textarea {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  outline: none;
+  font-family: inherit;
+}
+
+.editar-animal-formulario input:focus,
+.editar-animal-formulario select:focus,
+.editar-animal-formulario textarea:focus {
+  border-color: #d2691e;
+}
+
+.editar-animal-formulario textarea {
+  resize: vertical;
+}
+
+.editar-animal-formulario button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background-color: #d2691e;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.editar-animal-formulario button:hover {
+  background-color: #ab5b14;
+}
+
+.mensagem-edicao {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.mensagem-edicao.erro {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.mensagem-edicao.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+}

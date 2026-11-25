@@ -1,0 +1,170 @@
+.home {
+  min-height: 100vh;
+  background-color: #fdf8f5;
+}
+
+.banner-home {
+  width: 100%;
+  background-color: #fdf8f5;
+}
+
+.imagem-banner-home {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 480px;
+  padding: 60px 10%;
+  background: linear-gradient(
+    135deg,
+    #195036 0%,
+    #236646 100%
+  );
+  color: white;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+  font-size: 46px;
+  line-height: 1.15;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 8px;
+  background-color: #d2691e;
+  color: white;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: #ab5b14;
+}
+
+.hero-button.botao-secundario {
+  background-color: white;
+  color: #195036;
+}
+
+.hero-button.botao-secundario:hover {
+  background-color: #f1f1f1;
+}
+
+/* Seção Como funciona */
+.como-funciona {
+  padding: 60px 10%;
+  background-color: #fdf8f5;
+  text-align: center;
+}
+
+.como-funciona h2 {
+  margin-bottom: 30px;
+  color: #154734;
+  font-size: 32px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 25px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #236646;
+  font-size: 19px;
+}
+
+.card p {
+  color: #444444;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 420px;
+    padding: 50px 7%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 400px;
+    padding: 45px 7%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .como-funciona {
+    padding: 45px 7%;
+  }
+
+  .como-funciona h2 {
+    font-size: 28px;
+  }
+}
